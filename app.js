@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, 'public')));
  
 const limiter = RateLimit({
   windowMs: 60 * 60 * 1000, // 60 minutes
-  max: 70 // limit each IP to 100 requests per windowMs
+  max: 70 // limit each IP to 100 requests per windows
 });
 
 app.use(limiter);
